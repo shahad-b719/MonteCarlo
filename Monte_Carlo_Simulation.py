@@ -29,7 +29,7 @@ n_trials = st.sidebar.slider("Monte Carlo trials (repeat experiments)", 1, 10000
 n_trials_input = st.sidebar.number_input("Monte Carlo trials (1-10000)", min_value=1, max_value=100000, value=n_trials)
 n_trials = n_trials_input if n_trials_input else n_trials
 
-run_sim = st.button("Run Monte Carlo")
+run_sim = st.button("Run the simulation")
 
 
 
@@ -87,4 +87,5 @@ if run_sim: # check if simulation is triggered
 
 
     st.info("Set parameters on the left and click **Run Monte Carlo**.")
+
 
