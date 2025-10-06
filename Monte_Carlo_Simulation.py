@@ -61,7 +61,7 @@ if run_sim: # check if simulation is triggered
     st.caption("Number of dice rolls = " + string_rolls) 
     st.caption("Number of trials = " + string_trials  ) 
     
-    st.subheader("Monte Carlo results (summary)")
+    st.subheader("Results statistical summary)")
     st.write(df.describe().T) #statistical summary 
     
 # Histogram of one representative trial (last run)
@@ -87,6 +87,7 @@ if run_sim: # check if simulation is triggered
 
 
     st.info("Set parameters on the left and click **Run Monte Carlo**.")
+
 
 
 
