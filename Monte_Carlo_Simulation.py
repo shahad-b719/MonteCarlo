@@ -66,16 +66,16 @@ if run_sim: # check if simulation is triggered
     
 # Histogram of one representative trial (last run)
     st.subheader("Distribution of sums in the last trial")
-    fig, ax = plt.subplots(color = 'red', figsize=(6,3.5))
-    ax.hist(results, bins=np.arange(n_dice-0.5, 6*n_dice+1.5, 1))
+    fig, ax = plt.subplots(figsize=(6,3.5))
+    ax.hist(results, bins=np.arange(n_dice-0.5, 6*n_dice+1.5, 1), color = 'burgundy')
     ax.set_xlabel("Sum of dice")
     ax.set_ylabel("Frequency")
     st.pyplot(fig)
 
  # Histogram of trial means
     st.subheader("Distribution of trial means (each trial averaged over rolls)")
-    fig2, ax2 = plt.subplots(color = 'red',figsize=(6,3.5))
-    ax2.hist(df["mean_sum"], bins=30)
+    fig2, ax2 = plt.subplots(figsize=(6,3.5))
+    ax2.hist(df["mean_sum"], bins=30, color = 'burgundy')
     ax2.set_xlabel("Mean sum")
     ax2.set_ylabel("Count")
     st.pyplot(fig2)
@@ -87,6 +87,7 @@ if run_sim: # check if simulation is triggered
 
 
     st.info("Set parameters on the left and click **Run Monte Carlo**.")
+
 
 
 
